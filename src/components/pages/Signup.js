@@ -1,8 +1,9 @@
-import Illustration from "./Illustration"
-import Form from "./Form.js"
-import TextInput from "./TextInput"
-import CheackBox from "./CheackBox"
-import Button from "./Button"
+import Illustration from "../Illustration"
+import Form from "../Form.js"
+import TextInput from "../TextInput"
+import CheackBox from "../CheackBox"
+import Button from "../Button"
+import classes from "../../styles/Form.module.css"
 
 const Signup = ()=>{
     return(
@@ -15,7 +16,7 @@ const Signup = ()=>{
                     
                     <Illustration/>
                     
-                    <Form>
+                    <Form className={`${classes.form}`}>
 
                         <TextInput type="text" Placeholder="Enter  Name"  icon="person" />
 

@@ -1,9 +1,9 @@
 import "../styles/App.css"
 import Layout from "./Layout";
-import Login from "./Login";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
-import Signup from "./Signup";
-import image from "../assets/images/success.png"
+import Signup from "./pages/Signup";
+
 function App() {
   return (
     <Layout>
@@ -11,7 +11,7 @@ function App() {
       <Home/>
       <Signup/>
 
-      <Login image={image} />
+      <Login />
       
 
     </Layout>
