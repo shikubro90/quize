@@ -1,8 +1,8 @@
-const CheackBox = ({...rest}) =>{
+const CheackBox = ({ className,text,...rest}) =>{
     return(
-        <label>
+        <label className={className}>
             <input {...rest} />
-            <span> I agree to the Terms &amp; Conditions</span>
+            <span>{text}</span>
         </label>
     )
 }
