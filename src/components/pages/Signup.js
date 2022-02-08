@@ -33,7 +33,7 @@ const Signup = ()=>{
                         </Button>
                         
                         <div className="info">
-                          Already have an account? <a href="login.html">Login</a> instead.
+                          Already have an account? <a href="login">Login</a> instead.
                         </div>
 
                     </Form>

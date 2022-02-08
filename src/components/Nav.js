@@ -6,7 +6,7 @@ const Nav= ()=>{
         <nav className={Classes.nav}>
       <ul>
         <li>
-          <a href="index.html" className={Classes.brand}>
+          <a href="/" className={Classes.brand}>
             <img src={logo} alt="Learn with Sumit Logo" />
             <h3>Learn with Sumit</h3>
           </a>
