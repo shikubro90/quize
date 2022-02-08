@@ -26,10 +26,10 @@ const Signup = ()=>{
                         
                         <TextInput type="password" Placeholder="Confrim password"  icon="lock_clock" />
 
-                        <CheackBox type="checkbox" />
+                        <CheackBox type="checkbox" text={"I agree to the Terms &amp; Conditions"} />
 
                         <Button>
-                            Submit Now
+                            <span>Submit Now</span>
                         </Button>
                         
                         <div className="info">

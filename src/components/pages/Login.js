@@ -20,7 +20,11 @@ const Login = ()=>{
 
                     <TextInput type="password" placeholder="Enter Password" icon="lock"/>
                     
-                    <Button>Submit Now</Button>
+                    <Button> 
+
+                        <span>Submit Now</span>
+
+                    </Button>
 
                 </Form>
                 
