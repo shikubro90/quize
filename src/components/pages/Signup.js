@@ -4,12 +4,11 @@ import TextInput from "../TextInput"
 import CheackBox from "../CheackBox"
 import Button from "../Button"
 import classes from "../../styles/Form.module.css"
+import { Link } from "react-router-dom"
 
 const Signup = ()=>{
     return(
-
         <>
-
             <h1>Create an account</h1>
 
                 <div class="column">
@@ -33,7 +32,7 @@ const Signup = ()=>{
                         </Button>
                         
                         <div className="info">
-                          Already have an account? <a href="login">Login</a> instead.
+                          Already have an account? <Link to="login">Login</Link> instead.
                         </div>
 
                     </Form>
