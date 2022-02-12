@@ -1,10 +1,6 @@
-import React, { useContext, useEffect } from "react";
-import {getAuth, 
-    createUserWithEmailAndPassword,
-     updateProfile,
-      signInWithEmailAndPassword,
-    signOut} from "firebase/auth"
-
+import React, { useContext, useEffect, useState } from "react";
+import {getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut} from "firebase/auth"
+import "../firebase"
 
 const AuthContext = React.createContext();
 
@@ -15,9 +11,18 @@ export function useAuth(){
 
 const AuthProvider = ({children}) =>{
 
-    const [loading, setLoading] = useEffect(true)
-    const [currentUser, setCurrentUser] = useEffect()
+    const [loading, setLoading] = useState(true)
+    const [currentUser, setCurrentUser] = useState()
     
+    useEffect(()=>{
+        const Auth = getAuth();
+        const unsubscribe = onAuthStateChanged(Auth, (user)=>{
+            setCurrentUser(user);
+            setLoading(false)
+        }); 
+        return unsubscribe
+    }, [])
+
 
     // signup funciton
 
