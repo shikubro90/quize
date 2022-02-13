@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Video = ()=>{
     return(
-        <div class="video" className={Classes.video}>
+        <div className={Classes.video}>
 
             <Link to="/quize">
             

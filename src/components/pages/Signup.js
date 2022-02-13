@@ -7,7 +7,7 @@ const Signup = ()=>{
         <>
             <h1>Create an account</h1>
 
-                <div class="column">
+                <div className="column">
                     
                     <Illustration/>
 
