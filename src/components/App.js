@@ -6,11 +6,12 @@ import Signup from "./pages/Signup";
 import Quize from "./pages/Quize";
 import Result from "./pages/Result";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import AuthProvider from "../contex/AuthContext";
 
 function App() {
   return (
-
     <Router>
+      <AuthProvider>
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/result" component={Result} />
         </Switch>
       </Layout>
+      </AuthProvider>
     </Router>
 
   );
