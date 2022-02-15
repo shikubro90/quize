@@ -34,15 +34,15 @@ const AuthProvider = ({children}) =>{
 
     // signup funciton
 
-    async function signup(email, password, userName){
+    async function signup(email, password, username){
         
         const auth = getAuth()
 
         await createUserWithEmailAndPassword(auth, email, password);
 
         await updateProfile(auth.currentUser, {
-            dispalyName : userName
-        })
+            dispalyName : username
+        });
 
         const user = auth.currentUser;
 

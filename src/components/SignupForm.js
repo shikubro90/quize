@@ -7,7 +7,10 @@ import { Link, useHistory } from "react-router-dom"
 import { useState } from "react"
 import {useAuth} from "../contex/AuthContext"
 
+
 const SignupForm = () =>{
+
+
 
     const history = useHistory();
     const [username , setusername] = useState("");
@@ -85,6 +88,7 @@ const SignupForm = () =>{
         </Button>
 
         {error && <p className="error">{error}</p>}
+        
         <div className="info">
           Already have an account? <Link to="login">Login</Link> instead.
         </div>
