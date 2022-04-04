@@ -10,8 +10,6 @@ import {useAuth} from "../contex/AuthContext"
 
 const SignupForm = () =>{
 
-
-
     const history = useHistory();
     const [username , setusername] = useState("");
     const [useremail, setemail] = useState("");

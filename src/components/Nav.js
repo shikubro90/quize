@@ -1,16 +1,16 @@
 import Account from "./Account"
 import Classes from "../styles/Nav.module.css"
 import logo from "../assets/images/logo-bg.png"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 const Nav= ()=>{
     return(
         <nav className={Classes.nav}>
       <ul>
         <li>
-          <Link to="/" className={Classes.brand}>
+          <NavLink to="/" className={Classes.brand}>
             <img src={logo} alt="Learn with Sumit Logo" />
             <h3>Learn with Sumit</h3>
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <Account/>

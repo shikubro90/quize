@@ -6,7 +6,7 @@ const Progressbar = () =>{
 
         <div className={classes.progressBar}>
           <div className={classes.backButton}>
-            <span class="material-icons-outlined"> arrow_back </span>
+            <span className="material-icons-outlined"> arrow_back </span>
           </div>
           <div className={classes.rangeArea}>
             <div className={classes.tooltip}>24% Cimplete!</div>

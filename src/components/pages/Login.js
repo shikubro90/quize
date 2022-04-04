@@ -1,8 +1,5 @@
-import Form from "../Form"
 import Illustration from "../Illustration"
-import TextInput from "../TextInput"
-import classes from "../../styles/Form.module.css"
-import Button from "../Button"
+import LoginForm from "../LoginForm"
 
 const Login = ()=>{
 
@@ -14,19 +11,7 @@ const Login = ()=>{
                 
                 <Illustration/>
 
-                <Form className={`${classes.form}`}>
-
-                    <TextInput type="email" placeholder="User Name" icon="alternate_email" />
-
-                    <TextInput type="password" placeholder="Enter Password" icon="lock"/>
-                    
-                    <Button> 
-
-                        <span>Submit Now</span>
-
-                    </Button>
-
-                </Form>
+               <LoginForm/>
                 
             </div>
         </>
